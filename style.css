@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.country {
+    fill: rgb(186, 186, 186);
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.country:hover {
+    fill: rgb(142, 172, 142);
+}
+
+.country:active {
+    fill: green;
+}
+
