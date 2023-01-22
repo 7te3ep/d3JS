@@ -1,24 +1,28 @@
 import jsonData from './world.geo.json-master/countries.geo.json' assert { type: "json" }
+console.log(d3.select("svg").select('g').selectAll('path')._groups)
+
+    var paths = document.querySelector('#map').querySelector("g").querySelectorAll('.country');
+
+
+
+    paths.forEach((path)=>{
+        path.addEventListener("click",(e)=>{
+            if (e.target.id == answer) {
+                alert("win")
+                score ++ 
+                scoreDisplay.innerHTML = score
+                generate()
+            }
+        })
+    })
+    
+
 var pays = new Array()
 jsonData.features.forEach((item)=>{
     pays.push(item.properties.name)
 })
 
 const shuffle = arr => [...arr].sort(() => 0.5 - Math.random());
-
-var paths = document.querySelector('#map').querySelector("g").querySelectorAll('.country');
-console.log(paths)
-paths.forEach((path)=>{
-    path.addEventListener("click",(e)=>{
-        console.log(e.target.id)
-        if (e.target.id == answer) {
-            alert("win")
-            score ++ 
-            scoreDisplay.innerHTML = score
-            generate()
-        }
-    })
-})
 
 var answer = ""
 let prompt = document.getElementById("prompt")
@@ -45,6 +49,7 @@ function startGame(){
     score = 0
     scoreDisplay.innerHTML = score
 }
+
 
 
 
