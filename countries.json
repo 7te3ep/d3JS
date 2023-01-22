@@ -1573,6 +1573,19 @@
        "intermediate-region-code":""
     },
     {
+        "name":"Kosovo",
+        "alpha-2":"KW",
+        "alpha-3":"KWT",
+        "country-code":"-99",
+        "iso_3166-2":"ISO 3166-2:KW",
+        "region":"Asia",
+        "sub-region":"Western Asia",
+        "intermediate-region":"",
+        "region-code":"142",
+        "sub-region-code":"145",
+        "intermediate-region-code":""
+     },
+    {
        "name":"Kyrgyzstan",
        "alpha-2":"KG",
        "alpha-3":"KGZ",

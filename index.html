@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="//d3js.org/d3.v5.min.js"></script>
-    <script src="//unpkg.com/topojson@3"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <script src="map.js"></script>
+    <button id="start"> Start Game</button>
+    <button id="skip"> Skip</button>
+    <p id="prompt"></p>
+    <p id="score">0</p>
+    <script src="map.js" type="module"></script>
+    <script src="game.js" defer type="module"></script>
 </body>
 </html>
