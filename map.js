@@ -9,7 +9,7 @@ const path = d3.geoPath()
   .projection(projection);
 
 const zoom = d3.zoom()
-  .scaleExtent([1, 18])
+  .scaleExtent([0.2, 18])
   .on('zoom', zoomed);
 
 const svg = d3.select('body').append('svg')
