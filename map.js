@@ -40,7 +40,7 @@ d3.json('./world.geo.json-master/countries.geo.json')
 });
 
 
-d3.select("svg").attr('id',"map").on("dblclick.zoom", null).on('mousedown.zoom',null).on('touchstart.zoom',null);// Désactive le zoom avec un double click
+d3.select("svg").attr('id',"map").on("dblclick.zoom", null).on('mousedown.zoom',null).on('touchstart.zoom',zoomed);// Désactive le zoom avec un double click
 
 function zoomed() {
     g
@@ -76,6 +76,6 @@ let  drag = d3.drag().subject(function() {
     
     svg.selectAll(".country")
         .attr("d", path);
-});
+})
 
 svg.call(drag);
