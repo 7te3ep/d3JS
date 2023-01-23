@@ -7,7 +7,6 @@
 button {
     width: 20vw;
     height: 5vh;
-    overflow-y: hidden;
 }
 
 #map {
